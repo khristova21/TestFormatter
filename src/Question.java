@@ -2,20 +2,25 @@
 public abstract class Question 
 {
 
-	private int number = 1;
-	private String text = "";
+	private int number;
+	private String text;
 	
 	//constructors
+	public Question (String input)
+	{
+		number = 1;
+		text = input;
+	}
 	//public Question()
 	
-	public void getNumber()
+	public int getNumber()
 	{
-		number = number;
+		return number;
 	}
 	
-	public void getText()
+	public String getText()
 	{
-		text = text;
+		return text;
 	}
 	public abstract String getSolution();
 	
